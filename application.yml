@@ -1,1 +1,19 @@
+#APPLICATION CONFIGURATIONS.......................................................................................................................................................
+ server:
+  port: 8085
 
+#APPLICATION PROPERTIES...........................................................................................................................................................
+ spring:
+  #APPLICATION PROPERTIES
+  application:
+    name: UserService
+    
+#NETFLIX EUREKA SERVER CONFIGURATIONS.............................................................................................................................................
+ eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
